@@ -21,12 +21,12 @@ Here we have implemented two of them, [**Factory**](#factory) and [**Template Me
 According the site [OODesign](http://www.oodesign.com/template-method-pattern.html): *"A template method defines an algorithm in a base class using abstract operations that subclasses override to provide concrete behavior."*  
 In short: We can define pieces of a algorithm thats allow the implementation of one or more of these steps by the subclasses.
 
-[Example of a Template Method implementation](solid/Sample2/BankTemplate.cs)
+[Example of a Template Method implementation](Sample2/BankTemplate.cs)
 
 #### **FACTORY**
 According the site [OODesign](http://www.oodesign.com/factory-pattern.html): *"Creates objects without exposing the instantiation logic to the client and refers to the newly created object through a common interface"*
 
-[Example of a Factory implementation](solid/Sample2/BankFactory.cs)
+[Example of a Factory implementation](Sample2/BankFactory.cs)
 
 ## Learn more:
 [Gang of Four](http://www.blackwasp.co.uk/gofpatterns.aspx)  
