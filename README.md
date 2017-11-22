@@ -1,7 +1,7 @@
 # Example of S.O.L.I.D and Good Practices
-## This project was built with the goal to show a few of the most used patterns, good practices of programming and the practical application of S.O.L.I.D concepts .
+This project was built with the goal to show a few of the most used patterns, good practices of programming and the practical application of S.O.L.I.D concepts .
 
-### **---------What is S.O.L.I.D?-----------**
+### **What is S.O.L.I.D?**
 SOLID is a concept promoted by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin), also known as Uncle Bob, that aggregates five programming design principles with the aim of making the application code more readable, expandable and maintainable.
 The word "SOLID" is a acronym that means:
 * **S** -> Single Responsability Principle
@@ -12,7 +12,7 @@ The word "SOLID" is a acronym that means:
 
 **TODO** Description of each one.
 
-### **---------Design Patterns ---------**
+### **Design Patterns**
 #### What is "Design Patterns"?
 Design patterns are a group of common solutions for common problems.  
 Here we have implemented two of them, **Factory** and **Template Method**.
