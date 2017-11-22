@@ -15,7 +15,7 @@ The word "SOLID" is a acronym that means:
 ### **Design Patterns**
 #### What is "Design Patterns"?
 Design patterns are a group of common solutions for common problems.  
-Here we have implemented two of them, **Factory** and **Template Method**.
+Here we have implemented two of them, [**Factory**](#factory) and [**Template Method**](#template-method).
 
 #### **TEMPLATE METHOD**
 According the site [OODesign](http://www.oodesign.com/template-method-pattern.html): *"A template method defines an algorithm in a base class using abstract operations that subclasses override to provide concrete behavior."*  
