@@ -15,7 +15,7 @@ namespace solid.Sample2
             _writeLog($"transfer value: {valueTransaction}");
 
             fromAccount.Withdraw(valueTransaction);
-            toAccount.Withdraw(LogAndCalculateRates(valueTransaction));
+            fromAccount.Withdraw(LogAndCalculateRates(valueTransaction));
             toAccount.Deposit(valueTransaction);
 
             _writeLog($"from details: {fromAccount}");

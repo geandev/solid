@@ -5,21 +5,20 @@ namespace solid.Sample2
 {
     public class BankFactory : IBankFactory
     {
-        private readonly Dictionary<BankType, Func<BankTemplate>> _bankTypes;
+        private readonly Action<string> _writeLog;
+
+        private Dictionary<BankType, Func<Action<string>, BankTemplate>> BankFactoryTypes => new Dictionary<BankType, Func<Action<string>, BankTemplate>>
+        {
+            [BankType.Itau] = (log) => new Itau(log),
+            [BankType.Caixa] = (log) => new Caixa(log)
+        };
+
         private BankFactory(Action<string> writeLog)
         {
-            _bankTypes = new Dictionary<BankType, Func<BankTemplate>>
-            {
-                [BankType.Itau] = () => new Itau(writeLog),
-                [BankType.Caixa] = () => new Caixa(writeLog),
-            };
-
+            this._writeLog = writeLog;
         }
         public static IBankFactory Instance(Action<string> writeLog) => new BankFactory(writeLog);
 
-        public BankTemplate Factory(BankType bankType)
-        {
-            return this._bankTypes.GetValueOrDefault(bankType)?.Invoke();
-        }
+        public BankTemplate Factory(BankType bankType) => BankFactoryTypes.GetValueOrDefault(bankType)?.Invoke(_writeLog);
     }
 }

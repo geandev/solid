@@ -14,10 +14,10 @@ namespace solid.Sample1
             switch (bankType)
             {
                 case BankType.Caixa:
-                    toAccount.Balance = toAccount.Balance - CalcRatesCaixa(valueTransfer);
+                    fromAccount.Balance = fromAccount.Balance - CalcRatesCaixa(valueTransfer);
                     break;
                 case BankType.Itau:
-                    toAccount.Balance = toAccount.Balance - CalcRatesItau(valueTransfer);
+                    fromAccount.Balance = fromAccount.Balance - CalcRatesItau(valueTransfer);
                     break;
 
             }
