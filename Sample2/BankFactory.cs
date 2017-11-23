@@ -15,7 +15,7 @@ namespace solid.Sample2
 
         private BankFactory(Action<string> writeLog)
         {
-            this._writeLog = writeLog;
+            _writeLog = writeLog;
         }
         public static IBankFactory Instance(Action<string> writeLog) => new BankFactory(writeLog);
 

@@ -9,19 +9,19 @@ namespace solid.Sample2
         public static Account Factory(decimal balance) => new Account(balance);
         private Account(decimal balance)
         {
-            this.Id = Guid.NewGuid().ToString();
-            this.Balance = balance;
+            Id = Guid.NewGuid().ToString();
+            Balance = balance;
 
         }
 
         public void Withdraw(decimal valueToDraw)
         {
-            this.Balance -= valueToDraw;
+            Balance -= valueToDraw;
         }
 
         public void Deposit(decimal valueToDeposit)
         {
-            this.Balance += valueToDeposit;
+            Balance += valueToDeposit;
         }
 
         public override string ToString() => $"The balance is: {Balance}";

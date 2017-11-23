@@ -25,7 +25,7 @@ namespace solid.Sample2
         private decimal LogAndCalculateRates(decimal valueTransaction)
         {
             var rates = CalculateRates(valueTransaction);
-            _writeLog($"{this.GetType().Name} tax: {rates}");
+            _writeLog($"{GetType().Name} tax: {rates}");
             return rates;
         }
 
