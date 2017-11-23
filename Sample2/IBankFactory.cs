@@ -1,6 +1,6 @@
 using System;
 
-namespace solid.Sample2
+namespace Solid.Sample2
 {
     public interface IBankFactory
     {

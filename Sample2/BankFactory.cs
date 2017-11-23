@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace solid.Sample2
+namespace Solid.Sample2
 {
     public class BankFactory : IBankFactory
     {
@@ -19,6 +19,6 @@ namespace solid.Sample2
         }
         public static IBankFactory Instance(Action<string> writeLog) => new BankFactory(writeLog);
 
-        public BankTemplate Factory(BankType bankType) => BankFactoryTypes.GetValueOrDefault(bankType)?.Invoke(_writeLog);
+        public BankTemplate Factory(BankType bankType) => BankFactoryTypes.GetValueOrDefault(bankType) ? .Invoke(_writeLog);
     }
 }

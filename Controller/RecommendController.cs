@@ -1,6 +1,6 @@
-using solid.Sample2;
+using Solid.Sample2;
 
-namespace solid.Controller
+namespace Solid.Controller
 {
     public class RecommendController
     {

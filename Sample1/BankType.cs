@@ -1,4 +1,4 @@
-namespace solid.Sample1
+namespace Solid.Sample1
 {
     public enum BankType
     {

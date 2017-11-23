@@ -1,9 +1,9 @@
 ﻿using System;
-using solid.Controller;
-using s1 = solid.Sample1;
-using s2 = solid.Sample2;
+using Solid.Controller;
+using s1 = Solid.Sample1;
+using s2 = Solid.Sample2;
 
-namespace solid
+namespace Solid
 {
     class Program
     {

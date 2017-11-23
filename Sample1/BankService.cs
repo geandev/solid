@@ -1,6 +1,6 @@
 using System;
 
-namespace solid.Sample1
+namespace Solid.Sample1
 {
     public class BankService
     {

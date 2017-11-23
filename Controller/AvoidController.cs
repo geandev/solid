@@ -1,7 +1,7 @@
 using System;
-using solid.Sample1;
+using Solid.Sample1;
 
-namespace solid.Controller
+namespace Solid.Controller
 {
     public class AvoidController
     {
